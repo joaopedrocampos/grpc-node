@@ -1,7 +1,6 @@
 import path from 'path';
 import * as grpc from '@grpc/grpc-js';
 import * as protoLoader from '@grpc/proto-loader';
-// import * as db from './database.json';
 
 let database = [
     {
@@ -55,7 +54,7 @@ server.addService(wishlistProto.Wishlist.service, {
     createUser: createUser,
 });
 
-server.bindAsync('127.0.0.1:5000', grpc.ServerCredentials.createInsecure(), (error, port) => {
-    console.log('Server running at http://127.0.0.1:5000');
+server.bindAsync('0.0.0.0:5000', grpc.ServerCredentials.createInsecure(), (error, port) => {
+    console.log('Server running at 0.0.0.0:5000');
     server.start();
 });
