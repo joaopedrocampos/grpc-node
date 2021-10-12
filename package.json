@@ -1,0 +1,29 @@
+{
+  "name": "grpc-node",
+  "version": "0.0.1",
+  "description": "API with NodeJS and gRPC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaopedrocampos/grpc-node.git"
+  },
+  "keywords": [
+    "grpc",
+    "node"
+  ],
+  "author": "Joao Pedro Campos Silva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaopedrocampos/grpc-node/issues"
+  },
+  "homepage": "https://github.com/joaopedrocampos/grpc-node#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.3.7",
+    "@grpc/proto-loader": "^0.6.5",
+    "grpc": "^1.24.11"
+  },
+  "type": "module"
+}
